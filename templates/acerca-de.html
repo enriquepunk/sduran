@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block slider %}
+  <!-- Indicators -->
+  {#<ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>#}
+  <!-- Wrapper for slides -->
+  <div id="carousel-home" class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="static/img/Acerca-de/banner.jpg" alt=" Caption 1">
+      <div class="carousel-caption">
+       <!-- <h3 >LOREM IPSUM </h3>-->
+      </div>
+    </div>
+   
+  </div>
+{% endblock  %}
+
+
+{% block content %}
+<style type="text/css">
+  .carousel-caption{display: none;}
+</style>
+    <div class="row">
+      <div class="col-sm-12 page-title text-center white-bg">
+        <h1 class="montserrat bold">Acerca de</h1>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 page-title text-center white-bg">
+        <p class="montserrat text-justify">Detrás de TED<sup>x</sup>Cancún está el trabajo voluntario de un colectivo de emprendedores sociales locales, comprometidos con el desarrollo de Cancún e interesados en aportar a nuestro crecimiento, bienestar y proyección como comunidad. TEDxCancún es un evento sin fines de lucro, ¿quieres unirte como voluntario? ¡Contáctanos!
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 page-title text-center white-bg ">
+        <h1 clas="montserrat bold">El equipo</h1>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 page-title text-center white-bg margin-bottom-30">
+        <p class="montserrat text-center"><span class="red-color bold">Mónica Alba –</span> Licensee</p>
+        <p class="montserrat text-center"><span class="red-color bold">Maru Arreola –</span> Event Manager</p>
+        <p class="montserrat text-center"><span class="red-color bold">Lyn Ohala –</span> Logistics Manager</p>
+        <p class="montserrat text-center"><span class="red-color bold">Ángela Paredes –</span> Media + Contents Manager</p>
+        <p class="montserrat text-center"><span class="red-color bold">Elisa López –</span> Speaker Manager</p>
+        <p class="montserrat text-center"><span class="red-color bold">Carlos Segura –</span> Volunteer Coordinator</p>
+        <p class="montserrat text-center"><span class="red-color bold">Alberto Enríquez –</span> Web + Design Manager</p>
+      </div>
+    </div>
+   
+{% endblock %}
+{% block js %}
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $("li.home").addClass("active");
+  });
+</script>
+{% endblock  %}

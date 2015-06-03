@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block slider %}
+  <!-- Indicators -->
+  {#<ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>#}
+  <!-- Wrapper for slides -->
+  <div id="carousel-home" class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="static/img/Aliados/banner.jpg" alt=" Caption 1">
+      <div class="carousel-caption">
+       <!-- <h3 >LOREM IPSUM </h3>-->
+      </div>
+    </div>
+   
+  </div>
+{% endblock  %}
+
+
+{% block content %}
+<style type="text/css">
+  .carousel-caption{display: none;}
+</style>
+    <div class="row">
+      <div class="col-sm-12 page-title text-center white-bg">
+        <h1 clas="montserrat bold">Aliados</h1>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 page-title text-center white-bg margin-bottom-30">
+        <p class="montserrat text-center">Gracias a nuestros aliados TEDxCancún es una realidad</p>
+      
+      <div class="col-sm-3 padding-30">
+        <img class="" src="static/img/Aliados/punk.png">
+      </div>
+      <div class="col-sm-3 padding-30">
+        <img class="" src="static/img/Aliados/punk.png">
+      </div>
+      <div class="col-sm-3 padding-30">
+        <img class="" src="static/img/Aliados/punk.png">
+      </div>
+      <div class="col-sm-3 padding-30">
+        <img class="" src="static/img/Aliados/punk.png">
+      </div>
+      <div class="col-sm-3 padding-30">
+        <img class="" src="static/img/Aliados/punk.png">
+      </div>
+      <div class="col-sm-3 padding-30">
+        <img class="" src="static/img/Aliados/punk.png">
+      </div>
+      <div class="col-sm-3 padding-30">
+        <img class="" src="static/img/Aliados/punk.png">
+      </div>
+      <div class="col-sm-3 padding-30">
+        <img class="" src="static/img/Aliados/punk.png">
+      </div>
+      <div class="col-sm-3 padding-30">
+        <img class="" src="static/img/Aliados/punk.png">
+      </div>
+      </div>
+    </div>
+
+
+
+   
+{% endblock %}
+{% block js %}
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $("li.home").addClass("active");
+  });
+</script>
+{% endblock  %}

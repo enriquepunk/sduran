@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-n128k7');
+	src:url('fonts/icomoon.eot?#iefix-n128k7') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-n128k7') format('truetype'),
+		url('fonts/icomoon.woff?-n128k7') format('woff'),
+		url('fonts/icomoon.svg?-n128k7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cancel:before {
+	content: "\e600";
+}
+.icon-plus:before {
+	content: "\e603";
+}
+.icon-minus:before {
+	content: "\e604";
+}
+.icon-chat:before {
+	content: "\e607";
+}
+.icon-chevron-thin-left:before {
+	content: "\e601";
+}
+.icon-chevron-thin-right:before {
+	content: "\e602";
+}
+.icon-chevron-with-circle-left:before {
+	content: "\e605";
+}
+.icon-chevron-with-circle-right:before {
+	content: "\e606";
+}
+.icon-facebook-with-circle:before {
+	content: "\e615";
+}
+.icon-twitter-with-circle:before {
+	content: "\e61d";
+}
+.icon-youtube-with-circle:before {
+	content: "\e61f";
+}

@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{% block slider %}
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div id="carousel-home" class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="static/img/Home/slide-1.jpg" alt=" Caption 1">
+      <div class="carousel-caption">
+       <!-- <h3 >LOREM IPSUM </h3>-->
+      </div>
+    </div>
+   
+  </div>
+{% endblock  %}
+
+
+{% block content %}
+<style type="text/css">
+  .carousel-caption{display: none;}
+</style>
+    <div class="row margin-bottom-30">
+      <div class="col-sm-12 page-title text-center white-bg">
+        <h1 class="montserrat bold">¿Qué es TED<sup>x</sup>?</h1>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 page-title text-center white-bg">
+        <p class="montserrat text-justify">Es un evento que reúne ideas valiosas e innovadoras que se presentan a través de charlas sobre temas diversos, reuniendo a una audiencia en una experiencia similar al formato TED. La “x” significa que es un evento independiente, organizado por los propios miembros de la comunidad de forma voluntaria y sin fines de lucro. 
+        </p>
+        <p class="montserrat text-justify">El espíritu de los eventos TED<sup>x</sup> es “transmitir ideas que merecen difundirse” que provoquen conversación, debate, sinergias y acciones. Durante el evento se combinan charlas TED con oradores en vivo de la misma comunidad e invitados.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="containet-fluid">
+
+          <img class="img-responsive" src="static/img/Home/img-x.jpg">
+    </div>
+  <div class="container white-bg">
+    <div class="row">
+      <div class="col-sm-12 page-title text-center white-bg">
+        <h1 clas="montserrat bold">TED<sup>x</sup> Cancún</h1>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 page-title text-center white-bg">
+        <p class="montserrat text-justify">El tema <b>“Raíces + Ideas = Identidad”</b> refleja el dinamismo que se vive hoy en Cancún al representar una comunidad joven, multicultural, dinámica y propositiva que construye su propia identidad local y teje el futuro de la ciudad.  
+        </p>
+        <p class="montserrat text-justify">A través del evento pretendemos ofrecer una plataforma de difusión para las ideas y las personas que pueden influir de forma positiva en nuestra comunidad y así poder canalizar iniciativas, potenciar ideas y crear sinergias. Queremos aportar a Cancún ideas para una comunidad con identidad, mejor informada, proactiva, sustentable, transformadora e incluyente. 
+        </p>
+      </div>
+    </div>
+    <div class="row margin-bottom-30">
+      <div class="col-sm-12 page-title text-center white-bg linea-punteada-home">
+        <hr class="col-sm-12 dash margin-top-30 margin-bottom-30">
+      </div>
+      <div class="col-sm-12 page-title text-center white-bg">
+        <h1 clas="montserrat bold">Acerca de TED</h1>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 page-title text-center white-bg">
+        <p class="montserrat text-justify">TED es una organización sin fines de lucro cuya misión es difundir ideas que merecen ser transmitidas. TED comenzó como una conferencia de cuatro días en California en 1984 y ha crecido para apoyar a aquellas ideas que intentan cambiar el mundo por medio de distintas iniciativas.  
+        </p>
+        <p class="montserrat text-justify">En los eventos TED, se presentan ideas de los principales pensadores y emprendedores del mundo, que son invitados a dar una charla en 18 minutos o menos. Los ponentes TED han incluido a Richard Branson, Bill Gates, Elizabeth Gilbert, Isabel Allende, Benoit Mandelbrot, Philippe Starck, Ngozi Okonjo-Iweala, Brian Greene, Sylvia Earle entre muchos otros. Las charlas son compartidas en el portal TED.com y a través de medios como TV, Netflix, radio y numerosos sitios web. <a class="red-color no-hover" href="www.ted.com">Para saber más ingresa a www.ted.com  </a>
+        </p>
+      </div>
+    </div>
+  </div>
+    <div class="containet-fluid img-grande-home">
+          <!--<img class="img-responsive" src="static/img/Home/img-participa.jpg">-->
+
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+              <h1>¿Tienes alguna idea que merece ser compartida?</h1>
+              <div class="row">
+               <a href="ponentes.php"> <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 boton-home">
+                  <h2 class="uppercase">participa como ponente</h2>
+                </div></a>
+              </div>
+            </div>
+
+    </div>
+  <div class="container white-bg">
+
+   
+{% endblock %}
+{% block js %}
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $("li.home").addClass("active");
+  });
+</script>
+{% endblock  %}

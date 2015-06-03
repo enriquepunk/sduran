@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block slider %}
+  <!-- Indicators -->
+  {#<ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>#}
+  <!-- Wrapper for slides -->
+  <div id="carousel-home" class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="static/img/Tedx/banner.jpg" alt=" Caption 1">
+      <div class="carousel-caption">
+       <!-- <h3 >LOREM IPSUM </h3>-->
+      </div>
+    </div>
+   
+  </div>
+{% endblock  %}
+
+
+{% block content %}
+<style type="text/css">
+  .carousel-caption{display: none;}
+</style>
+    <div class="row">
+      <div class="col-sm-12 page-title text-center white-bg">
+        <h1 class="montserrat bold">¿Por qué TED<sup>x</sup> Cancún?</h1>
+      </div>
+      <div class="col-sm-10 col-sm-offset-1 page-title text-center white-bg margin-bottom-30">
+        <p class="montserrat text-justify">Porque queremos reflejar el dinamismo que se vive hoy en Cancún al representar una comunidad joven, multicultural, dinámica y propositiva que construye su propia identidad local y teje el futuro de la ciudad. TED<sup>x</sup> será una plataforma para difundir las ideas que han sido pilares de nuestra comunidad y darán rumbo a nuestro Cancún. 
+        </p>
+        <p class="montserrat text-justify">El tema del evento es <b>[Raíces + Ideas = Identidad]</b> y se ha propuesto porque con una población creciente y apenas 45 años de fundación, Cancún es una ciudad cosmopolita, dinámica y que se está autodefiniendo como comunidad a partir de su riqueza natural y cultural, su gente, la fusión de tradiciones, proyectos y propuestas. 
+        </p>
+         <p class="montserrat text-justify">TED<sup>x</sup>Cancún se realizará el viernes 18 de septiembre de 2015 en el Planetario de Cancún, Ka’Yok’. Los términos y condiciones de nuestra licencia TED establecen un cupo limitado de asistentes al evento. Muy pronto estará disponible el proceso de aplicación como asistente a TED<sup>x</sup>Cancún.
+         </p>
+      </div>
+    </div>
+  </div>
+    <div class="containet-fluid">
+
+          <img class="img-responsive" src="static/img/Tedx/img-selva.jpg">
+    </div>
+  <div class="container white-bg ">
+
+
+   
+{% endblock %}
+{% block js %}
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $("li.home").addClass("active");
+  });
+</script>
+{% endblock  %}
