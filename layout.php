@@ -24,14 +24,15 @@ $main_menu_en=array(
     'lang'=>LANG
     );
 $main_menu_es=array(
-    'home'=>'INICIO',
-    'ted'=>'TED<sup>x</sup> CANCÚN',
-    'ponentes'=>'PONENTES',
-    'aliados'=>'ALIADOS',
-    'media'=>'MEDIA/PRENSA',
-    'acerca'=>'ACERCA DE',
-    'contacto'=>'CONTACTO',
-    'faqs' => 'FAQS',
+    'home'=>'Inicio',
+    'noticias'=>'Noticias',
+    'biografia'=>'Biografia',
+    'sdr'=>'SDR',
+    'media'=>'Multimedia',
+    'enlaces'=>'Enlaces',
+    'calendario'=>'Calendario',
+    'fan' => 'FanZone',
+    'contacto' => 'Contactos',
     'lang_redirect'=>$lang_redirect,
     'lang'=>LANG
     );
