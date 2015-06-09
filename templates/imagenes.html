@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block slider %}
+  <div id="tittle-biografia" class="container-fluid black-bg">
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-4">
+           <h1 class="white-color arvo bold italic font-size-40">IMÁGENES</h1>
+         </div>
+         <div class="col-sm-8 tittle-linea">
+           <hr>
+         </div>
+       </div>
+     </div>
+  </div>
+{% endblock  %}
+
+{% block content %}
+<style type="text/css">
+  
+</style>
+    <div class="row black-bg">
+     <div class="container">
+       <div class="row">
+          <div class="col-sm-4 multimedia-imagenes-skew"><a href="static/img/multimedia-interior/pic1-multimedia.jpg" class="fancybox" rel="gallery" title=""><img src="static/img/multimedia-interior/pic1-multimedia-thumb.jpg"></a></div>
+          <div class="col-sm-4 multimedia-imagenes-skew"><a href="static/img//multimedia-interior/pic2-multimedia.jpg"  class="fancybox" rel="gallery" title=""><img src="static/img//multimedia-interior/pic2-multimedia-thumb.jpg"></a></div>
+          <div class="col-sm-4 multimedia-imagenes-skew"><a href="static/img//multimedia-interior/pic3-multimedia.jpg"  class="fancybox" rel="gallery" title=""><img src="static/img//multimedia-interior/pic3-multimedia-thumb.jpg"></a></div>
+         
+       </div>
+       <div class="row">
+          <div class="col-sm-4 multimedia-imagenes-skew"><a href="static/img/multimedia-interior/pic4-multimedia.jpg" class="fancybox" rel="gallery" title=""><img src="static/img/multimedia-interior/pic4-multimedia-thumb.jpg"></a></div>
+          <div class="col-sm-4 multimedia-imagenes-skew"><a href="static/img//multimedia-interior/pic5-multimedia.jpg"  class="fancybox" rel="gallery" title=""><img src="static/img//multimedia-interior/pic5-multimedia-thumb.jpg"></a></div>
+          <div class="col-sm-4 multimedia-imagenes-skew"><a href="static/img//multimedia-interior/pic6-multimedia.jpg"  class="fancybox" rel="gallery" title=""><img src="static/img//multimedia-interior/pic6-multimedia-thumb.jpg"></a></div>
+         
+       </div>
+
+       <div class="row">
+          <div class="col-sm-4 multimedia-imagenes-skew"><a href="static/img/multimedia-interior/pic7-multimedia.jpg" class="fancybox" rel="gallery" title=""><img src="static/img/multimedia-interior/pic7-multimedia-thumb.jpg"></a></div>
+          <div class="col-sm-4 multimedia-imagenes-skew"><a href="static/img//multimedia-interior/pic8-multimedia.jpg"  class="fancybox" rel="gallery" title=""><img src="static/img//multimedia-interior/pic8-multimedia-thumb.jpg"></a></div>
+          <div class="col-sm-4 multimedia-imagenes-skew"><a href="static/img//multimedia-interior/pic9-multimedia.jpg"  class="fancybox" rel="gallery" title=""><img src="static/img//multimedia-interior/pic9-multimedia-thumb.jpg"></a></div>
+         
+       </div>
+     </div>
+    </div>
+   
+{% endblock %}
+{% block js %}
+<script type="text/javascript" src="static/js/segment-display.js"></script>
+<script src="static/js/jquery.fancybox.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.fancybox').fancybox();
+    });
+  </script>
+{% endblock  %}

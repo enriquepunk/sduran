@@ -1,0 +1,211 @@
+{% extends "layout.html" %}
+{% block slider %}
+  <div id="tittle-biografia" class="container-fluid black-bg">
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-3">
+           <h1 class="white-color arvo bold italic font-size-40">BIOGRAFÍA</h1>
+         </div>
+         <div class="col-sm-9 tittle-linea">
+           <hr>
+         </div>
+       </div>
+     </div>
+  </div>
+{% endblock  %}
+
+{% block content %}
+<style type="text/css">
+  
+</style>
+    
+    <div class="row bg-bio-top">
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-4 chava-pic">
+           <img src="static/img/biografia/chava-bio-pic.png">
+         </div>
+         <div class="col-sm-8 text-bio">
+           <h2 class="arvo bold italic font-size-25 white-color">SALVADOR DURAN</h2>
+           <p class="cuprum italic white-color font-size-14 text-ceter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sem erat, condimentum nec faucibus nec, condimentum vel quam. Donec eleifend gravida odio, eget ultricies augue. Ut vehicula accumsan neque. Phasellus vitae leo quis neque lacinia ultricies. Etiam metus lacus, accumsan eu massa eget, dignissim mollis turpis. Praesent vitae vulputate dolor. Maecenas fermentum semper leo, quis fermentum eros viverra nec.</p>
+           <p class="cuprum italic white-color font-size-14 text-ceter">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum sit amet tempor lacus, ut vehicula quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla mollis dolor turpis, at pulvinar eros eleifend vitae. Nulla nec vehicula elit, aliquet dapibus arcu. Phasellus blandit velit in eleifend porta. Nulla sodales rhoncus lorem scelerisque mattis. Etiam in tortor a quam rutrum scelerisque non sit amet urna. Nunc neque mi, facilisis in nulla sed, ornare ullamcorper urna. Cras a dignissim tortor, vel viverra eros. Nam tempus lobortis elementum.</p>
+           <p class="cuprum italic white-color font-size-14 text-ceter">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum sit amet tempor lacus, ut vehicula quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla mollis dolor turpis, at pulvinar eros eleifend vitae. Nulla nec vehicula elit, aliquet dapibus arcu. Phasellus blandit velit in eleifend porta. Nulla sodales rhoncus lorem scelerisque mattis. Etiam in tortor a quam rutrum scelerisque non sit amet urna. Nunc neque mi, facilisis in nulla sed, ornare ullamcorper urna. Cras a dignissim tortor, vel viverra eros. Nam tempus lobortis elementum.</p>
+         </div>
+       </div>
+     </div>
+    </div>
+    <div class="row black-bg">
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-4 text-center biografia-skew">
+            <img style="border:none;" onmouseout="$(this).attr('src','static/img/biografia/bio-pic-1.jpg'); this.style.border = 'none';document.getElementById('no-hover-1').style.visibility = 'visible';document.getElementById('hover-1').style.visibility = 'hidden';" 
+            onmouseover="$(this).attr('src','static/img/biografia/bio-pic-1-hover.jpg'); this.style.border = '5px solid #fff';document.getElementById('no-hover-1').style.visibility = 'hidden';document.getElementById('hover-1').style.visibility = 'visible'" 
+            src="static/img/biografia/bio-pic-1.jpg" rel="static/img/biografia/bio-pic-1.jpg">
+            <!--No-hover-->
+            <div id="no-hover-1" style="position:absolute; bottom:0; padding:0 20px;">
+              <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
+                <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
+              </p>
+            </div>
+            <!--Hover-->
+            <div id="hover-1" style="position:absolute; bottom:40%; padding:0 20px; visibility:hidden; ">
+              <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
+              <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
+            </div>
+         </div>
+
+         <div class="col-sm-4 text-center biografia-skew">
+            <img style="border:none;" onmouseout="$(this).attr('src','static/img/biografia/bio-pic-2.jpg'); this.style.border = 'none';document.getElementById('no-hover-2').style.visibility = 'visible';document.getElementById('hover-2').style.visibility = 'hidden';" 
+            onmouseover="$(this).attr('src','static/img/biografia/bio-pic-2-hover.jpg'); this.style.border = '5px solid #fff';document.getElementById('no-hover-2').style.visibility = 'hidden';document.getElementById('hover-2').style.visibility = 'visible'" 
+            src="static/img/biografia/bio-pic-2.jpg" rel="static/img/biografia/bio-pic-2.jpg">
+            <!--No-hover-->
+            <div id="no-hover-2" style="position:absolute; bottom:0; padding:0 20px;">
+              <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
+                <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
+              </p>
+            </div>
+            <!--Hover-->
+            <div id="hover-2" style="position:absolute; bottom:40%; padding:0 20px; visibility:hidden; ">
+              <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
+              <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
+            </div>
+         </div>
+
+         <div class="col-sm-4 text-center biografia-skew">
+            <img style="border:none;" onmouseout="$(this).attr('src','static/img/biografia/bio-pic-3.jpg'); this.style.border = 'none';document.getElementById('no-hover-3').style.visibility = 'visible';document.getElementById('hover-3').style.visibility = 'hidden';" 
+            onmouseover="$(this).attr('src','static/img/biografia/bio-pic-3-hover.jpg'); this.style.border = '5px solid #fff';document.getElementById('no-hover-3').style.visibility = 'hidden';document.getElementById('hover-3').style.visibility = 'visible'" 
+            src="static/img/biografia/bio-pic-3.jpg" rel="static/img/biografia/bio-pic-3.jpg">
+            <!--No-hover-->
+            <div id="no-hover-3" style="position:absolute; bottom:0; padding:0 20px;">
+              <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
+                <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
+              </p>
+            </div>
+            <!--Hover-->
+            <div id="hover-3" style="position:absolute; bottom:40%; padding:0 20px; visibility:hidden; ">
+              <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
+              <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
+            </div>
+         </div>
+       </div>
+       <div class="row ">
+      
+         <div class="col-sm-4 text-center biografia-skew">
+            <img style="border:none;" onmouseout="$(this).attr('src','static/img/biografia/bio-pic-4.jpg'); this.style.border = 'none';document.getElementById('no-hover-4').style.visibility = 'visible';document.getElementById('hover-4').style.visibility = 'hidden';" 
+            onmouseover="$(this).attr('src','static/img/biografia/bio-pic-4-hover.jpg'); this.style.border = '5px solid #fff';document.getElementById('no-hover-4').style.visibility = 'hidden';document.getElementById('hover-4').style.visibility = 'visible'" 
+            src="static/img/biografia/bio-pic-4.jpg" rel="static/img/biografia/bio-pic-4.jpg">
+            <!--No-hover-->
+            <div id="no-hover-4" style="position:absolute; bottom:0; padding:0 20px;">
+              <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
+                <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
+              </p>
+            </div>
+            <!--Hover-->
+            <div id="hover-4" style="position:absolute; bottom:40%; padding:0 20px; visibility:hidden; ">
+              <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
+              <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
+            </div>
+         </div>
+
+         <div class="col-sm-4 text-center biografia-skew">
+            <img style="border:none;" onmouseout="$(this).attr('src','static/img/biografia/bio-pic-5.jpg'); this.style.border = 'none';document.getElementById('no-hover-5').style.visibility = 'visible';document.getElementById('hover-5').style.visibility = 'hidden';" 
+            onmouseover="$(this).attr('src','static/img/biografia/bio-pic-5-hover.jpg'); this.style.border = '5px solid #fff';document.getElementById('no-hover-5').style.visibility = 'hidden';document.getElementById('hover-5').style.visibility = 'visible'" 
+            src="static/img/biografia/bio-pic-5.jpg" rel="static/img/biografia/bio-pic-5.jpg">
+            <!--No-hover-->
+            <div id="no-hover-5" style="position:absolute; bottom:0; padding:0 20px;">
+              <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
+                <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
+              </p>
+            </div>
+            <!--Hover-->
+            <div id="hover-5" style="position:absolute; bottom:40%; padding:0 20px; visibility:hidden; ">
+              <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
+              <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
+            </div>
+         </div>
+
+         <div class="col-sm-4 text-center biografia-skew">
+            <img style="border:none;" onmouseout="$(this).attr('src','static/img/biografia/bio-pic-6.jpg'); this.style.border = 'none';document.getElementById('no-hover-6').style.visibility = 'visible';document.getElementById('hover-6').style.visibility = 'hidden';" 
+            onmouseover="$(this).attr('src','static/img/biografia/bio-pic-6-hover.jpg'); this.style.border = '5px solid #fff';document.getElementById('no-hover-6').style.visibility = 'hidden';document.getElementById('hover-6').style.visibility = 'visible'" 
+            src="static/img/biografia/bio-pic-6.jpg" rel="static/img/biografia/bio-pic-6.jpg">
+            <!--No-hover-->
+            <div id="no-hover-6" style="position:absolute; bottom:0; padding:0 20px;">
+              <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
+                <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
+              </p>
+            </div>
+            <!--Hover-->
+            <div id="hover-6" style="position:absolute; bottom:40%; padding:0 20px; visibility:hidden; ">
+              <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
+              <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
+            </div>
+         </div>
+       </div>
+     </div>
+    </div>
+   
+{% endblock %}
+{% block js %}
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $("li.home").addClass("active");
+  });
+</script>
+<script type="text/javascript" src="static/js/segment-display.js"></script>
+    <script type="text/javascript">
+
+      var display = new SegmentDisplay("display");
+      display.pattern         = "##:##:##:##";
+      display.cornerType      = 2;
+      display.displayType     = 7;
+      display.displayAngle    = 9;
+      display.digitHeight     = 20;
+      display.digitWidth      = 12;
+      display.digitDistance   = 2;
+      display.segmentWidth    = 3;
+      display.segmentDistance = 0.5;
+      display.colorOn         = "rgba(68, 254, 1, 1)";
+      display.colorOff        = "rgba(41, 51, 42, 1)";
+
+      animate();
+
+      function calcularTiempoDosFechas(date1, date2){
+    start_actual_time = new Date(date1);
+    end_actual_time = new Date(date2);
+
+    var diff = end_actual_time - start_actual_time;
+
+    var diffSeconds = diff/1000;
+    var HH = Math.floor(diffSeconds/3600);
+    var MM = Math.floor(diffSeconds%3600)/60;
+
+    var formatted = ((HH < 10)?("0" + HH):HH) + ":" + ((MM < 10)?("0" + MM):MM)
+    return formatted;
+}
+
+      function animate() {
+        var time    = new Date();
+        var time2   = new Date();
+        var day     = '01'
+        var hours   = time.getHours();
+        var minutes = time.getMinutes();
+        var seconds = time.getSeconds();
+        var value   = day + ':' + ((hours < 10) ? ' ' : '') + hours
+                    + ':' + ((minutes < 10) ? '0' : '') + minutes
+                    + ':' + ((seconds < 10) ? '0' : '') + seconds;
+        d1 = "01/17/2012 11:20";
+        d2 = "01/18/2012 12:25";
+       // alert(calcularTiempoDosFechas(value, d2))
+        display.setValue(value);
+        window.setTimeout('animate()', 100);
+        
+      }
+
+    </script>
+{% endblock  %}

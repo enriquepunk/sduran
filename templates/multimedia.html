@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block slider %}
+  <div id="tittle-biografia" class="container-fluid black-bg">
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-4">
+           <h1 class="white-color arvo bold italic font-size-40">MULTIMEDIA</h1>
+         </div>
+         <div class="col-sm-8 tittle-linea">
+           <hr>
+         </div>
+       </div>
+     </div>
+  </div>
+{% endblock  %}
+
+{% block content %}
+<style type="text/css">
+  
+</style>
+    <div class="row black-bg">
+     <div class="container">
+       <div class="row">
+        <a href="imagenes.php"><div class="col-sm-6 multimedia-imagenes multimedia-skew">
+          <h1 class=" text-center white-color arvo bold italic font-size-30">IMÁGENES</h1>
+          <p class="text-center">
+            <span class="icon-chevron-with-circle-right font-size-25"></span>
+          </p>
+        </div></a>
+        <a href="videos.php"><div class="col-sm-6 pull-right multimedia-videos multimedia-skew">
+          <h1 class=" text-center white-color arvo bold italic font-size-30">VIDEOS</h1>
+          <p class="text-center">
+            <span class="icon-chevron-with-circle-right font-size-25"></span>
+          </p>
+        </div></a>
+       </div>
+     </div>
+    </div>
+   
+{% endblock %}
+{% block js %}
+<script type="text/javascript" src="static/js/segment-display.js"></script>
+s
+{% endblock  %}
