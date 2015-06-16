@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block slider %}
+  <div id="tittle-biografia" class="container-fluid black-bg">
+     <div class="container">
+       <div class="row">
+         <div class="col-sm-3">
+           <h1 class="white-color arvo bold italic font-size-40">FAN ZONE</h1>
+         </div>
+         <div class="col-sm-9 tittle-linea">
+           <hr>
+         </div>
+       </div>
+     </div>
+  </div>
+{% endblock  %}
+
+{% block content %}
+<style type="text/css">
+  
+</style>
+    <div class="row black-bg">
+     <div class="container">
+       <div class="row">
+          <div id="1" class="col-sm-6 fanzone-skew hovers">
+            <!--No-hover-->
+            <div id="up-1"class="col-sm-12 noticia-active no-padding" style="display: none;">
+              <img class="img-responsive" src="http://placehold.it/300x300&amp;text=Fanzone">
+            </div>
+            <div id="down-1" class="col-sm-12 no-padding" style="position:relative; display: none;">
+              <img class="img-responsive" src="http://placehold.it/300x300&amp;text=Fanzone-hover">
+            </div>
+          </div>
+          <div id="2" class="col-sm-6 fanzone-skew hovers">
+            <!--No-hover-->
+            <div id="up-2"class="col-sm-12 noticia-active no-padding" style="display: none;">
+              <img class="img-responsive" src="http://placehold.it/300x300&amp;text=Fanzone">
+            </div>
+            <div id="down-2" class="col-sm-12 no-padding" style="position:relative; display: none;">
+              <img class="img-responsive" src="http://placehold.it/300x300&amp;text=Fanzone-hover">
+            </div>
+          </div>
+       </div>
+     </div>
+    </div>
+   
+{% endblock %}
+{% block js %}
+<script type="text/javascript" src="static/js/segment-display.js"></script>
+<script type="text/javascript">
+      $(function(){
+        $(".hovers").hover(function(){
+          var des=$(this).attr("id");
+          //alert(des);
+          $("#up-"+des).removeClass("noticia-active");
+          $("#down-"+des).addClass("noticia-active");
+        },function() {
+          var des=$(this).attr("id");
+
+          //alert("sali")
+          $("#up-"+des).addClass("noticia-active");
+          $("#down-"+des).removeClass("noticia-active");
+  });
+      });   
+     </script>
+
+{% endblock  %}

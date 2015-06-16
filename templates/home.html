@@ -54,52 +54,71 @@
     <div class="row black-bg">
      <div class="container">
        <div class="row">
-         <div class="col-sm-4 text-center margin-bottom-20 home-skew-noticias">
-          <img style="border:none;" onmouseout="$(this).attr('src','static/img/home/pic-news-1.jpg'); this.style.border = 'none';document.getElementById('no-hover-1').style.visibility = 'visible';document.getElementById('hover-1').style.visibility = 'hidden';" 
-          onmouseover="$(this).attr('src','static/img/home/pic-news-1-hover.jpg'); this.style.border = '5px solid #fff';document.getElementById('no-hover-1').style.visibility = 'hidden';document.getElementById('hover-1').style.visibility = 'visible'" 
-          src="static/img/home/pic-news-1.jpg" rel="static/img/home/pic-news-1.jpg">
-          <!--No-hover-->
-          <div id="no-hover-1" style="position:absolute; bottom:0; padding:0 20px;">
-            <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
-              <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
-            </p>
+      
+         <div id="1" class="col-sm-4 text-center margin-bottom-20 home-skew-noticias hovers">
+            <!--No-hover-->
+          <div id="up-1"class="col-sm-12 noticia-active no-padding" style="display: none;">
+            <img class="img-responsive" style="border:none;" src="static/img/home/pic-news-1.jpg">
+            <div id="no-hover-1" style="position:absolute; bottom:0; padding:0 20px;">
+              <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
+                <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
+              </p>
+            </div>
           </div>
-          <!--Hover-->
-          <div id="hover-1" style="position:absolute; bottom:40%; padding:0 20px; visibility:hidden; ">
-            <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
-            <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
-          </div>
+            <!--Hover-->
+            <div id="down-1" class="col-sm-12 no-padding" style="position:relative; display: none;">
+              <img class="img-responsive" src="static/img/home/pic-news-1-hover.jpg">
+              <div id="hover-1" style="position:absolute; bottom:40%; padding:0 20px;">
+                <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
+                <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
+              </div>
+            </div>
+
          </div>
-         <div class="col-sm-4 text-center margin-bottom-20 home-skew-noticias">
-          <img style="border:none;" onmouseout="$(this).attr('src','static/img/home/pic-news-2.jpg'); this.style.border = 'none';;document.getElementById('no-hover-2').style.visibility = 'visible';document.getElementById('hover-2').style.visibility = 'hidden';" onmouseover="$(this).attr('src','static/img/home/pic-news-2-hover.jpg'); this.style.border = '5px solid #fff';document.getElementById('no-hover-2').style.visibility = 'hidden';document.getElementById('hover-2').style.visibility = 'visible'" src="static/img/home/pic-news-2.jpg" rel="static/img/home/pic-news-2.jpg">
-          <!--No-hover-->
-          <div id="no-hover-2" style="position:absolute; bottom:0; padding:0 20px;">
-            <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
-              <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
-            </p>
+
+         <div id="2" class="col-sm-4 text-center margin-bottom-20 home-skew-noticias hovers">
+            <!--No-hover-->
+          <div id="up-2"class="col-sm-12 noticia-active no-padding" style="display: none;">
+            <img class="img-responsive" style="border:none;" src="static/img/home/pic-news-2.jpg">
+            <div id="no-hover-1" style="position:absolute; bottom:0; padding:0 20px;">
+              <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
+                <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
+              </p>
+            </div>
           </div>
-          <!--Hover-->
-          <div id="hover-2" style="position:absolute; bottom:40%; padding:0 20px; visibility:hidden; ">
-            <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
-            <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
-          </div>
+            <!--Hover-->
+            <div id="down-2" class="col-sm-12 no-padding" style="position:relative; display: none;">
+              <img class="img-responsive" src="static/img/home/pic-news-2-hover.jpg">
+              <div id="hover-1" style="position:absolute; bottom:40%; padding:0 20px;">
+                <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
+                <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
+              </div>
+            </div>
+
          </div>
-         <div class="col-sm-4 text-center margin-bottom-20 home-skew-noticias">
-          <img style="border:none;" onmouseout="$(this).attr('src','static/img/home/pic-news-3.jpg'); this.style.border = 'none';;document.getElementById('no-hover-3').style.visibility = 'visible';document.getElementById('hover-3').style.visibility = 'hidden';" onmouseover="$(this).attr('src','static/img/home/pic-news-3-hover.jpg'); this.style.border = '5px solid #fff';document.getElementById('no-hover-3').style.visibility = 'hidden';document.getElementById('hover-3').style.visibility = 'visible'" src="static/img/home/pic-news-3.jpg" rel="static/img/home/pic-news-3.jpg">
-          <!--No-hover-->
-          <div id="no-hover-3" style="position:absolute; bottom:0; padding:0 20px;">
-            <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
-              <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
-            </p>
+
+         <div id="3" class="col-sm-4 text-center margin-bottom-20 home-skew-noticias hovers">
+            <!--No-hover-->
+          <div id="up-3"class="col-sm-12 noticia-active no-padding" style="display: none;">
+            <img class="img-responsive" style="border:none;" src="static/img/home/pic-news-3.jpg">
+            <div id="no-hover-1" style="position:absolute; bottom:0; padding:0 20px;">
+              <p  class="cuprum italic bold white-color font-size-20">Lorem Ipsum
+                <a href="#" style="-webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a>
+              </p>
+            </div>
           </div>
-          <!--Hover-->
-          <div id="hover-3" style="position:absolute; bottom:40%; padding:0 20px; visibility:hidden; ">
-            <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
-            <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
-          </div>
+            <!--Hover-->
+            <div id="down-3" class="col-sm-12 no-padding" style="position:relative; display: none;">
+              <img class="img-responsive" src="static/img/home/pic-news-3-hover.jpg">
+              <div id="hover-1" style="position:absolute; bottom:40%; padding:0 20px;">
+                <p  class="arvo italic bold white-color font-size-25">Lorem Ipsum</p>
+                <p class="cuprum italic font-size-14 white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" style="  -webkit-border-radius: 20px;border-radius: 20px; border:1px solid #fff;padding: 4px 10px; font-size: 20px; color: #fff" > + </a></p>
+              </div>
+            </div>
+
          </div>
        </div>
      </div>
@@ -108,13 +127,18 @@
     <div class="row bg-counter-digital">
      <div class="container">
        <div class="row">
-         <div class="col-sm-3 text-center "><h3 class="arvo bold italic white-color font-size-25 margin-top-120 ">PROXIMA CARRERA:</h3></div>
+         <div class="col-sm-3 text-center "><h3 class="arvo bold italic white-color font-size-25 margin-top-120 ">PRÓXIMA CARRERA:</h3></div>
          <div class="col-sm-6">
-           <div>
-            <canvas id="display" width="555" height="300"></canvas>
+
+            <canvas id="display" style="width:100%; height:auto;margin-left:-10px"></canvas>
+         </div>
+         <div class="col-sm-3">
+          <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 margin-top-70">
+           <img class="img-responsive" src="http://placehold.it/300x300&amp;text=Bandera">
+           </div>
           </div>
          </div>
-         <div class="col-sm-3"></div>
        </div>
      </div>
     </div>
@@ -129,12 +153,28 @@
 </script>
 <script type="text/javascript" src="static/js/segment-display.js"></script>
     <script type="text/javascript">
+      $(function(){
+        $(".hovers").hover(function(){
+          var des=$(this).attr("id");
+          //alert(des);
+          $("#up-"+des).removeClass("noticia-active");
+          $("#down-"+des).addClass("noticia-active");
+        },function() {
+          var des=$(this).attr("id");
+
+          //alert("sali")
+          $("#up-"+des).addClass("noticia-active");
+          $("#down-"+des).removeClass("noticia-active");
+  });
+      });   
+     </script>
+    <script type="text/javascript">
 
       var display = new SegmentDisplay("display");
       display.pattern         = "##:##:##:##";
       display.cornerType      = 2;
       display.displayType     = 7;
-      display.displayAngle    = 9;
+      display.displayAngle    = 0;
       display.digitHeight     = 20;
       display.digitWidth      = 12;
       display.digitDistance   = 2;
@@ -160,18 +200,30 @@
 }
 
       function animate() {
-        var time    = new Date();
-        var time2   = new Date();
-        var day     = '01'
-        var hours   = time.getHours();
-        var minutes = time.getMinutes();
-        var seconds = time.getSeconds();
-        var value   = day + ':' + ((hours < 10) ? ' ' : '') + hours
+        var mseg_dia=1000*60*60*24;
+        var mseg_hora=1000*60*60;
+        var mseg_minuto=1000*60;
+        var mseg_segundo=1000;
+
+        var actual    = new Date();
+        var carrera = new Date(2015, 5, 27, 12, 00, 00, 00);
+      
+        
+       var falta = carrera - actual; //resta de fechas
+       
+       var day = Math.floor(falta / mseg_dia); //dias
+       var time5 = falta % mseg_dia; //sobra de dia
+       var hours = Math.floor(time5 / mseg_hora); //horas
+       var time7 = time5%mseg_hora;//sobra de horas
+       var minutes = Math.floor(time7 / mseg_minuto);//minutos
+       var time9 = time7%mseg_minuto;//sobra de minutos
+       var seconds = Math.floor(time9 / mseg_segundo);//segundos
+      // alert(time10);
+
+       var value   = ((day < 10) ? '0' : '') + day + ':' + ((hours < 10) ? '0' : '') + hours
                     + ':' + ((minutes < 10) ? '0' : '') + minutes
                     + ':' + ((seconds < 10) ? '0' : '') + seconds;
-        d1 = "01/17/2012 11:20";
-        d2 = "01/18/2012 12:25";
-       // alert(calcularTiempoDosFechas(value, d2))
+
         display.setValue(value);
         window.setTimeout('animate()', 100);
         
