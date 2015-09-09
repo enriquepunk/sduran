@@ -42,6 +42,8 @@ textarea:-moz-placeholder { color:#a9a9a9; }
 		
 }
 
+.text-left{text-align: left;}
+
 .arvo{font-family: 'Arvo', serif;}
 .cuprum{font-family: 'Cuprum', sans-serif;}
 .italic{font-style: italic;}
@@ -133,6 +135,7 @@ yellow = #F6FF01
 .lightgray-bg{
     background-color: #e7e7e7;
 }
+.pavimento-bg{background-image: url('../img/General/black-texture-bg-chava-duran.jpg');}
 
 .no-hover:hover{text-decoration: none;
 color:#fc0e0b }
@@ -181,6 +184,7 @@ color:#fc0e0b }
 }
 .no-padding{padding: 0;}
 .margin-top-50{margin-top: 50px;}
+.margin-top-100{margin-top: 100px;}
 .margin-top-70{margin-top: 70px;}
 .margin-top-120{margin-top: 120px;}
 .margin-top-30{margin-top: 30px;}
@@ -487,7 +491,6 @@ font-style: italic;}
 
 .sponsor-header{  
   height: 50px;
-    margin-top: -1px;
   position: absolute;
   z-index: 200;
   right: 0;
@@ -567,8 +570,8 @@ font-style: italic;}
   min-height: 100px;
 }
 
-.chava-pic{  margin-top: -60px;}
-.text-bio{padding-left: 50px;}
+.chava-pic{  margin-top: 100px;}
+.text-bio{padding-left: 50px;margin-bottom: 20px;}
 
 /*--------SDR---------*/
   .chava-pic-car{padding-left: 0;margin:20px 0;}
@@ -578,40 +581,29 @@ font-style: italic;}
   .circuito{background-color: #051AB9;border:2px solid #fff;margin-bottom: 20px;padding: 15px;}
   .circuito h2, .circuito p{  transform: skewX(5deg);}
 /*------Multimedia-----*/
-.multimedia-skew{transform: skewX(-5deg)}
-.multimedia-imagenes{min-height: 400px;background-image: url(../img/multimedia/multimedia-pic-photo.jpg); background-size: 100% 100%;border:2px solid #fff; margin-bottom:40px; width: 48%!important;   padding-top: 110px;}
-.multimedia-videos{min-height: 400px;background-image: url(../img/multimedia/multimedia-pic-video.jpg); background-size: 100% 100%;border:2px solid #fff; margin-bottom:40px; width: 48%!important;  padding-top: 110px;}
+  .multimedia-skew{transform: skewX(-5deg)}
+  .multimedia-imagenes{min-height: 400px;background-image: url(../img/multimedia/multimedia-pic-photo.jpg); background-size: 100% 100%;border:2px solid #fff; margin-bottom:40px; width: 48%!important;   padding-top: 110px;}
+  .multimedia-videos{min-height: 400px;background-image: url(../img/multimedia/multimedia-pic-video.jpg); background-size: 100% 100%;border:2px solid #fff; margin-bottom:40px; width: 48%!important;  padding-top: 110px;}
 
 /*------Multimedia-imagenes-------*/
-.multimedia-imagenes-skew{transform: skewX(-5deg);margin-bottom: 30px;}
-.fancybox-skin{background: transparent!important;}
+  .multimedia-imagenes-skew{transform: skewX(-5deg);margin-bottom: 30px;}
+  .fancybox-skin{background: transparent!important;}
 
 
 /*------------ENLACES-------------*/
-.enlaces-skew{transform: skewX(-5deg);margin-bottom: 30px;}
+  .enlaces-skew{transform: skewX(-5deg);margin-bottom: 30px;}
 
 /*--------FANZONE-------------*/
 
-.fanzone-skew{transform: skewX(-5deg);margin-bottom: 30px; position: relative}
+  .fanzone-skew{transform: skewX(-5deg);margin-bottom: 30px; position: relative}
 
 
 /*--------NOTICIAS-------*/
-.noticias-skew{transform: skewX(-5deg);margin-bottom: 30px; position: relative}
+  .noticias-skew{transform: skewX(-5deg);margin-bottom: 30px; position: relative}
 
-img.attachment-post-thumbnail.wp-post-image {
-  height: auto;
-}
-a.more-link {
-  border: 1px solid #fff;
-  padding: 5px 10px;
-  border-radius: 15px;
-  color: #fff;
-  margin-right: 35px;
-  margin-top: -5px;
-}
-.image-thumbnail{
-  position: relative;
-}
+  img.attachment-post-thumbnail.wp-post-image {height: auto;}
+a.more-link {border: 1px solid #fff;padding: 5px 10px;border-radius: 15px;color: #fff;margin-right: 35px;margin-top: -5px;}
+.image-thumbnail{position: relative;}
 
 .plus-noticias{   border: 1px solid #fff;
   padding: 2px 10px;
@@ -651,16 +643,35 @@ padding: 130px 40px;}
 
 
 @media (max-width: 767px) {
+  /*--------LAYOUT--------*/
+  .logo a img{margin-bottom: 0;}
+  .text-bio{padding-left: 15px;}
+  span.icon-chevron-thin-right {margin-left: -15px;}
+  a.left.carousel-control,a.right.carousel-control {padding: 70px 0;}
+  /*--------HOME-----------*/
+  .home-skew-noticias{margin-top: 15px;}
+  #display{  margin-left: 0px!important;}
+  .proxima-text h3{margin-top: 20px;}
+  .proxima-bandera{margin-top: 20px;margin-bottom: 20px;}
 
 }
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+/*-------Biografia-------*/  
+  .chava-pic {margin-top: 190px;}
+  .text-bio {margin-bottom: 20px;}
+/*----------SDR---------*/
+.chava-pic-car {margin-top: 150px;}
+/*.sdr-skew-circuito {transform: skewX(-3deg);}*/
     
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-   
+  
+/*-------Biografia-------*/
+  .chava-pic {margin-top: 20px;}
+
 }
 
 @media (min-width: 1200px) {
