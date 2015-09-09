@@ -22,7 +22,7 @@ define('DB_NAME', 'noticias_sdpage');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'konoha10');
+define('DB_PASSWORD', 'WccyKg4pDQ');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
