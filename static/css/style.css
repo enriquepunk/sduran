@@ -474,7 +474,7 @@ ol.carousel-indicators {
   margin-left: 0;
 }
 .icons {
-  margin-top: 14px;
+  margin-top: 10px;
 }
 .icons a span{  font-size: 19px;}
 .nav > li > a {
@@ -626,7 +626,7 @@ a.more-link {border: 1px solid #fff;padding: 5px 10px;border-radius: 15px;color:
 
 .show-post-opacity{display: block!important;}
 .interior-post-opacity{
-padding: 130px 40px;}
+padding: 110px 40px;}
 .interior-post-opacity a{text-decoration: none;}
 .interior-post-opacity p{
   font-family: 'Cuprum', sans-serif;

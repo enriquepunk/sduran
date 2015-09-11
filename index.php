@@ -9,7 +9,7 @@ $app = new \Slim\Slim();
 $loader = new Twig_Loader_Filesystem('templates');  
 $twig = new Twig_Environment($loader, array(  /*'cache' => 'cache',*/ ));  
 //BASE URL
-define('BASE_URL', 'http://localhost:/sduran2.0/');  //Sobreescribir por la ruta de su proyecto.
+define('BASE_URL', 'http://punklabs.ninja/sduran/');  //Sobreescribir por la ruta de su proyecto.
 $data=array(
 	'BASE_URL' => constant('BASE_URL'),
 );

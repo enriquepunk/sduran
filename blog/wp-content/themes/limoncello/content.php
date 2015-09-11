@@ -27,7 +27,7 @@
 
 			<?php else : ?>
                             <div class="title-post-<?php the_ID(); ?> show-post-opacity entry-title col-sm-12 titulo-hover text-left ">
-                                <a href="<?php the_permalink(); ?>" class=""  rel="bookmark"><h1 class="cuprum italic font-size-20 bold white-color"><?php the_title(); ?> <span class="plus-noticias">+</span></h1></a>
+                                <a href="<?php the_permalink(); ?>" class=""  rel="bookmark"><h1 class="cuprum italic font-size-12 bold white-color"><?php the_title(); ?> <span class="plus-noticias">+</span></h1></a>
                             </div>
                             <!--<div class="col-sm-12 image-thumbnail"></div>-->
 
@@ -65,7 +65,7 @@
 	<div id="" class="entrada post-opacity hover-post-<?php the_ID(); ?>" style="">
 		<div class="interior-post-opacity">
 		 	<a href="<?php the_permalink(); ?>" class=""  rel="bookmark">
-		 		<h1 class="arvo italic font-size-25 bold white-color text-center uppercase">
+		 		<h1 class="arvo italic font-size-20 bold white-color text-center uppercase">
 		 			<?php the_title(); ?>
 		 		</h1>
 				<?php the_content( __( '+', 'twentytwelve' ) ); ?>

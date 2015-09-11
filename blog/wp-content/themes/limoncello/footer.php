@@ -19,8 +19,6 @@
                     <img src="../static/img/General/logo-van-dutch-sponsor.png" alt="Chava">
                   </div>
                   <div class="col-sm-3 img-sponsor"><img src="../static/img/General/logo-kik-sponsor.png" alt="Chava"></div>
-                  <div class="col-sm-3 img-sponsor" style="margin-top:15px"><img src="../static/img/General/logo-amlin-sponsor.png" alt="Chava"></div>
-                  <div class="col-sm-3 img-sponsor"><img src="../static/img/General/logo-red-bull-sponsor.png" alt="Chava"></div>
                 </div>
 
                 <div class="item">
@@ -28,8 +26,7 @@
                   <div class="col-sm-3 img-sponsor" style="margin-top:25px;">
                   <img src="../static/img/General/logo-van-dutch-sponsor.png" alt="Chania"></div>
                   <div class="col-sm-3 img-sponsor"><img src="../static/img/General/logo-kik-sponsor.png" alt="Chania"></div>
-                  <div class="col-sm-3 img-sponsor" style="margin-top:15px"><img src="../static/img/General/logo-amlin-sponsor.png" alt="Chania"></div>
-                  <div class="col-sm-3 img-sponsor" ><img src="../static/img/General/logo-red-bull-sponsor.png" alt="Chania"></div>
+                  
                 </div>
 
               </div>
@@ -55,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 border-footer-sponsors"></div>
+       <!-- <div class="col-sm-12 border-footer-sponsors"></div>
         <div class="container">
           <div class="row">
           <div class="col-sm-3 text-center logo"> 
@@ -88,7 +85,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
 
 
         </footer>

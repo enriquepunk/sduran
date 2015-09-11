@@ -112,15 +112,15 @@
 							        </div>
 							        <div id="navbar" class="collapse navbar-collapse">
 							          <ul class="nav navbar-nav navbar-right">
-							            <li class="home "><a href="../index.php">Home</a></li>
+							            <li class="home "><a href="../">Home</a></li>
 							            <li class="about-us"><a href="index.php">Noticias</a></li>
-							            <li class="admissions"><a href="../biografia.php">Biografia</a></li>
-							            <li class="student-life"><a href="../sdr.php">SDR</a></li>
-							            <li class="student-life"><a href="../multimedia.php">Multimedia</a></li>
-							            <li class="student-life"><a href="../enlaces.php">Enlaces</a></li>
-							            <li class="student-life"><a href="../calendario.php">Calendario</a></li>
-							            <li class="student-life"><a href="../fan-zone.php">Fan Zone</a></li>
-							            <li class="student-life"><a href="../contacto.php">Contacto</a></li> 
+							            <li class="admissions"><a href="../biografia">Biografia</a></li>
+							            <!--<li class="student-life"><a href="../sdr.php">SDR</a></li>-->
+							            <li class="student-life"><a href="../multimedia">Multimedia</a></li>
+							            <li class="student-life"><a href="../enlaces">Enlaces</a></li>
+							            <li class="student-life"><a href="../calendario">Calendario</a></li>
+							            <li class="student-life"><a href="../fan-zone">Fan Zone</a></li>
+							            <li class="student-life"><a href="../contacto">Contacto</a></li> 
 							          </ul>
 							          
 							        </div><!--/.nav-collapse -->
@@ -132,7 +132,6 @@
 							<div  class="col-sm-2 icons pull-right">
 							   	<a><span class="icon-facebook-with-circle"></span></a>
 							    <a><span class="icon-twitter-with-circle"></span></a>
-							    <a><span class="icon-youtube-with-circle"></span></a>
 							    <select class="icon-chat lang cuprum bold">
 								  <option value="Esp">Esp</option>
 								  <option value="Eng">Eng</option>
@@ -147,8 +146,7 @@
 					<div class="col-sm-2 text-sponsor"><span class="cuprum italic font-size-14" style="color:black">Sponsored by: </span></div>
 					<div class="col-sm-3" style="margin-top:15px"><img class="img-responsive refle" src="../static/img/General/logo-van-dutch-sponsor-up.png"></div>
 					<div class="col-sm-2" style="margin-top:5px"><img class="img-responsive" src="../static/img/General/logo-kik-sponsor-up.png"></div>
-					<div class="col-sm-2" style="margin-top:5px"><img class="img-responsive" src="../static/img/General/logo-bmw-sponsor-up.png"></div>
-					<div class="col-sm-2" style="margin-top:5px"><img class="img-responsive" src="../static/img/General/logo-red-bull-sponsor-up.png"></div>
+					
 
 				</div>
 			</div>
