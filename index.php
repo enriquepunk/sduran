@@ -10,7 +10,7 @@ $loader = new Twig_Loader_Filesystem('templates');
 $twig = new Twig_Environment($loader, array(  /*'cache' => 'cache',*/ ));  
 $twig->addExtension(new Twig_Extensions_Extension_Text());
 //BASE URL
-define('BASE_URL', 'http://punklabs.ninja/a-nah/');  //Sobreescribir por la ruta de su proyecto.
+define('BASE_URL', 'http://punklabs.ninja/sduran/');  //Sobreescribir por la ruta de su proyecto.
 
 
 $languages = array('es','en');
