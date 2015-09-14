@@ -22,7 +22,7 @@ define('DB_NAME', 'noticias_sdpage');
 define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'WccyKg4pDQ');
+define('DB_PASSWORD', 'konoha10');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -33,8 +33,8 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-define('WP_SITEURL', 'http://punklabs.ninja/sduran/blog');
-define('WP_HOME',    'http://punklabs.ninja/sduran/blog');
+define('WP_SITEURL', 'http://localhost/');
+define('WP_HOME',    'http://localhost/');
 
 /**#@+
  * Authentication Unique Keys and Salts.

@@ -206,11 +206,14 @@
         var mseg_segundo=1000;
 
         var actual    = new Date();
-        var carrera = new Date(2015, 09, 24, 3, 00, 00, 00);
+        var carrera = new Date(2015, 06, 24, 3, 00, 00, 00);
+        //var carrera = new Date(2015, 09, 24, 3, 00, 00, 00);
       
-        
+
        var falta = carrera - actual; //resta de fechas
-       
+        if (falta<=0){
+          falta=0;
+        }
        var day = Math.floor(falta / mseg_dia); //dias
        var time5 = falta % mseg_dia; //sobra de dia
        var hours = Math.floor(time5 / mseg_hora); //horas

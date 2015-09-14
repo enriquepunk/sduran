@@ -115,9 +115,9 @@
 							        </div>
 							        <div id="navbar" class="collapse navbar-collapse">
 							         <ul class="nav navbar-nav navbar-right">
-							            <li class="home  active"><a href="/sduran">Inicio</a></li>
+							            <li class="home  active"><a href="{{BASE_URL}}">Inicio</a></li>
 							            <li class="about-us"><a href="blog/">Noticias</a></li>
-							            <li class="admissions"><a href="biografia">Biografia</a></li>
+							            <li class="admissions"><a href="{{BASE_URL}}biografia">Biografia</a></li>
 							            <!--<li class="student-life"><a href="sdr">SDR</a></li>-->
 							            <li class="student-life"><a href="multimedia">Multimedia</a></li>
 							            <li class="student-life"><a href="enlaces">Enlaces</a></li>
@@ -135,9 +135,9 @@
 							<div  class="col-sm-2 icons pull-right">
 							   	<a><span class="icon-facebook-with-circle"></span></a>
 							    <a><span class="icon-twitter-with-circle"></span></a>
-							    <select class="icon-chat lang cuprum bold">
-								  <option value="Esp"><span class="icon-chat"></span><span>Esp</span></option>
-								  <option value="Eng"><span class="icon-chat"></span><span>Eng</span></option>
+							    <select id="lang-selector" class="icon-chat lang cuprum bold">
+								  	<option {% if LANG=="es" %}selected{% endif %} value="{{REDIRECT_URL}}?lang=es">Esp</option>
+				      				<option {% if LANG=="en" %}selected{% endif %} value="{{REDIRECT_URL}}?lang=en">Eng</option>
 								</select>
 							</div>
 						</div>
@@ -178,7 +178,7 @@
 						  <div class="carousel-inner" role="listbox">
 						    <div class="item active">
 						      <div class="col-sm-12 col-xs-12 "><span class="cuprum italic font-size-14">Sponsors:</span></div>
-						      <div class="col-sm-3 col-xs-12 img-sponsor" style="margin-top:25px;">
+						      <div class="col-sm-3 col-sm-offset-3 col-xs-12 img-sponsor" style="margin-top:25px;">
 						      	<img src="static/img/General/logo-van-dutch-sponsor.png" alt="Chava">
 						      </div>
 						      <div class="col-sm-3 col-xs-12 img-sponsor"><img src="static/img/General/logo-kik-sponsor.png" alt="Chava"></div>
@@ -187,7 +187,7 @@
 
 						    <div class="item">
 						      <div class="col-sm-12 col-xs-12"><span class="cuprum italic font-size-14">Sponsors:</span></div>
-						      <div class="col-sm-3 col-xs-12 col-xs-12 img-sponsor" style="margin-top:25px;">
+						      <div class="col-sm-3 col-xs-12 col-sm-offset-3 img-sponsor" style="margin-top:25px;">
 						      <img src="static/img/General/logo-van-dutch-sponsor.png" alt="Chania"></div>
 						      <div class="col-sm-3 col-xs-12 img-sponsor"><img src="static/img/General/logo-kik-sponsor.png" alt="Chania"></div>
 						      
@@ -216,40 +216,7 @@
 	    			</div>
     			</div>
 	    	</div>
-	    	<!--<div class="col-sm-12 border-footer-sponsors"></div>
-    		<div class="container">
-	    		<div class="row">
-					<div class="col-sm-3 col-xs-12 text-center logo"> 
-						<a href="index.php"><img class="margin-top-20 margin-bottom-20 img-responsive" src="static/img/General/logo.png" width="122" alt="International American School of Cancún"></a>
-					</div>
-	    			<div class="col-sm-9 col-xs-12 pull-right">
-	    				<div class="row footer-menu" style="position:relative">
-	    					<div class="col-sm-9 pull-sm-offset-1">
-	    						<ul  class="list-inline text-left ">
-			    					<li class="home"><a class="cuprum bold italic" href="index.php">{{main_menu.home}}</a></li>
-						            <li class="about-us"><a class="cuprum bold italic" href="blog/">{{main_menu.noticias}}</a></li>
-						            <li class="admissions"><a class="cuprum bold italic" href="biografia.php">{{main_menu.biografia}}</a></li>
-						            <li class="student-life"><a class="cuprum bold italic" href="sdr.php">{{main_menu.sdr}}</a></li>
-						            <li class="student-life"><a class="cuprum bold italic" href="multimedia.php">{{main_menu.media}}</a></li>
-						            <li class="student-life"><a class="cuprum bold italic" href="enlaces.php">{{main_menu.enlaces}}</a></li>
-						            <li class="student-life"><a class="cuprum bold italic" href="calendario.php">{{main_menu.calendario}}</a></li>
-						            <li class="student-life"><a class="cuprum bold italic" href="fan.php">{{main_menu.fan}}</a></li>
-						            <li class="student-life"><a class="cuprum bold italic" href="contacto.php">{{main_menu.contacto}}</a></li>
-			    				</ul>			    				
-	    					</div>
-	    					<div  class="col-sm-2 col-xs-12 icons pull-right">
-							   	<a><span class="icon-facebook-with-circle"></span></a>
-							    <a><span class="icon-twitter-with-circle"></span></a>
-							    <a><span class="icon-youtube-with-circle"></span></a>
-							    <select class="icon-chat lang cuprum bold">
-								  <option value="Esp">Esp</option>
-								  <option value="Eng">Eng</option>
-								</select>
-							</div>
-	    				</div>
-	    			</div>
-	    		</div>
-	    	</div>-->
+
 
 
 	     	</footer>
@@ -269,6 +236,21 @@
 <script src="static/js/bootstrap.min.js"></script>
 <script src="static/js/functions.js"></script>
 <script src="static/js/validate.js"></script>
+<script >
+	$(document).ready(function(){
+		
+		$("#subscribe-form").validate({
+			submitHandler: function(form) {
+    			// form.submit();
+    			form.reset();
+    			$('#newsletterModal').modal('show');
+  			}
+  		});
+		$("#lang-selector").change(function(e){
+			window.location = $(this).val(); 
+		});
+	});
+</script>
 {% block js %}
 {% endblock  %}
   
