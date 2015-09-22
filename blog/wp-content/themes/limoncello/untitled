@@ -1,0 +1,29 @@
+<script type="text/javascript">
+            $('#datepicker').datepicker();
+            $('#reserva').click(function (e){
+                e.preventDefault();
+                scroll_navigation=false;
+                var section=$('#form_footer');
+                $('html, body').stop(true,true).animate({scrollTop: $(section).offset().top -100 }, 1500,"swing");
+                setTimeout(function(){scroll_navigation=true},1500)
+           });
+            $("#fancy_intro_click").fancybox();
+            $("#form_footer").validate({
+                submitHandler: function(form) {
+                    $.ajax({
+                    type: 'POST',
+                    url: "../send_mail.php",
+                    data: $("#form_footer").serialize(),
+                    // Mostramos un mensaje con la respuesta de PHP
+                    success: function(data) {
+                            $("#form_footer").each(function(){
+                                this.reset();
+                            });
+                                $("#fancy_intro_click").trigger("click");
+                        }
+                    })
+                        return false;
+                }
+           });
+    </script>   
+    <?php wp_footer() ?>     

@@ -1,0 +1,120 @@
+
+
+#loadcontact{display: none;background-color: #fff;padding:0;z-index: 40}
+#close-contact{
+    float: right;
+    height: 10px;
+      padding: 5px;
+      line-height: 9px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    border: 2px solid #656565;
+    text-align: center;
+    cursor: pointer; color:#656565 ;width: 10px;text-decoration: none;
+}
+.notosans{font-family: 'Noto Sans', sans-serif;}
+.pacifico{font-family: 'Pacifico', cursive;}
+.navbar .nav{margin: 0 !important;}
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+#main-content.index .post{font-size: 100%;position: relative;margin-left: 0;margin-right: 0;}
+#main-content.index .post .entry-header{}
+#main-content.index .post .entry-header .entry-title{font-size: 30px;margin: 0;}
+#main-content.index .post .entry-header .comments-link{position: absolute;right: 10px;top: 10px;z-index: 10;font-size: 10px;}
+
+#sidebar hr{border: none !important;}
+.entry-header hr{border-color:#3e1909 !important; }
+.entry-header h1 a{color: #222F7F;font-size: 20px; font-family: 'notosans';font-weight: bold;}
+
+#main-content.index .entry-content p{color: #222F7F;font-size: 12px;font-family: 'notosans';}
+#main-content.index .entry-content .more-link{color: #F2FEFF;display: block;display: block; clear: both;background-color: #244AB7;width: 120px; text-align: center;font-size: 15px;text-decoration: none;font-family: 'notosans';}
+#main-content.index .entry-content .meta-nav{display: none;}
+#main-content.index .entry-meta{}
+
+.item { padding: 2%; }
+.item.w2 { width: 50%; }
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+#sidebar-outer{border-right: 1px solid #ab4b18;}
+#sidebar{padding: 15px 15px 50px 40px;border-right: 1px solid #AB4B18;}
+
+#sidebar h3{font-size: 15px;font-family: 'Noto Sans', sans-serif;color: #222f7f; font-weight: bold;border-bottom: 1px solid #7A5A33;margin:0 0 10px;}
+#sidebar .widget_categories, #sidebar .widget_archive, #sidebar .widget_recent_entries{border-top: 1px solid #7A5A33;margin-top: 15px;}
+#sidebar ul{margin-left: 0;}
+#sidebar ul li{margin-bottom: 5px;list-style: none;}
+#sidebar ul li a{color: #222f7f;font-size: 15px;}
+/*.entry-content p a img{max-width: 100% !important;}*/
+
+
+/* ==========================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info { }
+
+
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*Movil*/
+@media (max-width: 767px) {
+    body{padding: 0;}
+    .item{margin-bottom: 30px;}
+    .navbar .btn-navbar .icon-bar{width: 25px;}
+    #social-top-outer{}
+    #header #logo{padding-top: 20px}
+    #main-menu {margin: 0;}
+    #main-menu nav.collapse ul{padding: 20px; background-color: #F4F4F4;}
+    #main-menu .btn{float: left;
+    margin: 0 auto 10px;
+    width: 30px;}
+    #content-outer{}
+     #main-menu-outer{padding:10px;background-image: url('../img/bg2.png'); width: auto;}
+     .servicios .service h3{text-align: center;}
+}
+
+#sec_nociticas{padding: 20px 0;background-size: 100% auto;}
+/*Escritorio*/
+@media (min-width: 1030px) {
+    /*#header{position: fixed;z-index: 100;height: 111px;}*/
+    #content-outer{
+    padding: 0;}
+    .item {margin: 0 0 30px!important;border-bottom: 1px solid #AB4B18; }
+.post{padding: 2%;margin: 2% 0;}
+#contacto{height: 450px;}
+    #formulario{width: 320px;float: right;}
+    #loadcontact{display: none;position: fixed;top: 109px;width: 100%;height: 452px;background-color: #fff;padding:0;z-index: 40}
+}
+@media (min-width: 350px) and (max-width: 767px) {
+    #sec_nociticas{padding: 40px 50px}
+}
+#horario{width: 42% !important;height: 26px !important;}

@@ -140,44 +140,15 @@ $app->get('/contacto', function() use ($twig,$data,$content){
     echo $twig->render('contacto.html',$data);  
 })->name('about');
 
+$app->get('/enlaces', function() use ($twig,$data,$content){ 
+    $data["page"] = $content["about"];
+    $data["my_title"] = "about";
+    echo $twig->render('enlaces.html',$data);  
+})->name('about');
 
-$app->get('/desarrollos', function() use ($twig,$data,$desarrollos,$content){  
-    $data["page"] = $content["desarrollos"];
-    $data["desarrollos"] = $desarrollos;
-    echo $twig->render('desarrollos.html',$data);  
-});
 
-$app->get('/desarrollos/:param', function($param) use ($app,$twig,$data,$desarrollos,$content){  
-    if ($param==$desarrollos["playa"]["slug"]) {
-        $data["desarrollo"] = $desarrollos["playa"];
-        $data["page"] = $content["desarrollo_playa"];
-    }
-    elseif($param==$desarrollos["downtown"]["slug"]){
-        $data["desarrollo"] = $desarrollos["downtown"];
-        $data["page"] = $content["desarrollos"];
-    }
-    elseif($param==$desarrollos["tulum"]["slug"]){
-        $data["desarrollo"] = $desarrollos["tulum"];
-        $data["page"] = $content["desarrollo_tulum"];
-    }
-    // elseif ($param==$desarrollos["village"]["slug"]) {
-    //     $data["desarrollo"] = $desarrollos["village"];
-    // }
-    else{
-        $app->notFound();   
-    }
-    
-    
-    echo $twig->render('desarrollo.html',$data);  
-});
-$app->get('/chill-weekend', function() use ($twig,$data,$content){  
-    $data["page"] = $content["chill_weekend"];
-    echo $twig->render('chill-weekend.html',$data);  
-});
-$app->get('/contacto', function() use ($twig,$data,$content){  
-    $data["page"] = $content["contact"];
-    echo $twig->render('contacto.html',$data);  
-});
+
+
 
 // $x = $app->request()->get('lang');
 // if (isset($x)) {
